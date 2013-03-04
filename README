@@ -11,4 +11,4 @@ avons créés sont dansle fichier "app.js" (chemin: js/app.js).
 NB :
 - Nous n’avons pas utilisé le Backbonne, parce que les fonctionnalités
   de l’application ne sont pas très compliquées.  
-- Les autres pages HTML  sont dans le dossier "WEB-INF"
+- Les autres pages HTML  sont dans le dossier "WEB-INF".
