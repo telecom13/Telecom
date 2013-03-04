@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Geonotes TSE</title>	   
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap-responsive.min.css"> 
+		<link rel="stylesheet" type="text/css" href="../css/app.css">
+		<style type="text/css"></style>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/bootstrap-dropdown.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+		<script src="../js/app.js"></script>
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&sensor=true"></script>
+		<script type="text/javascript">
+		
+		</script>
+    </head>
+	  <body class="home blog top-navbar" onload="Liste_parcours_user()">
+	   <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="../accueil.html">GeoNotes</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right" id="menu-main" class="">
+              <li class="">
+                <a href="./user.html">Accueil</a>
+              </li>
+			   <li class="">
+                <a href="./user_geolocaliser.html">Se Géolocalier</a>
+              </li>
+             
+              <li class="">
+                <a href="./user_liste_parcours.html">Liste des Parcours</a>
+              </li>
+   
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div id="wrap" class="container" role="document">
+		<div id="content"  class="row">
+			<div id="main" class="span8" role="main">
+				<div class="page-header">
+						<h2> Liste des Parcours </h2>
+				</div>
+				<div id="content"  class="row">
+				  <div id="main" class="span8" role="main">
+					<div  class="bs-docs-example">
+						<div class="accordion" id="liste_parcours">		
+						</div>
+					</div>
+				 </div>	
+				 <div id="parcours_carte" class="span8" width="80%" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></div>	<br />
+				<div id="directionsPanel" class="span8"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

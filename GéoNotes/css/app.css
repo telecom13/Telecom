@@ -1,0 +1,677 @@
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body {
+  background: url("../img/grey-bg.png") repeat;
+}
+
+#wrap {
+  margin-top: 20px;
+}
+
+a {
+  color: #366180;
+}
+
+hr {
+  margin: 30px 0;
+  border: 0;
+  border-top: 1px solid #DDD;
+  border-bottom: 1px solid #EEE;
+}
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 20px 0 30px;
+  border-bottom: 1px solid #DDD;
+}
+
+.thumbnail {
+  display: block;
+  padding: 4px;
+  line-height: 20px;
+  border: 1px solid #DDD;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-color: #FFFFFF;
+}
+
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 20px;
+  border-left: 5px solid #3C6E91;
+}
+
+.accordion-heading .accordion-toggle {
+  background-color: #DDD;
+}
+
+/* ------- Fluid Columns ------- */
+.one_half{ width:48%; }
+.one_third{ width:30.66%; }
+.two_third{ width:65.33%; }
+.one_fourth{ width:22%; }
+.three_fourth{ width:74%; }
+.one_fifth{ width:16.8%; }
+.two_fifth{ width:37.6%; }
+.three_fifth{ width:58.4%; }
+.four_fifth{ width:67.2%; }
+.one_sixth{ width:13.33%; }
+.five_sixth{ width:82.67%; }
+.one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth{ position:relative; margin-right:4%; float:left; }
+.last{ margin-right:0 !important; clear:right; }
+.clearboth {clear:both;display:block;font-size:0;height:0;line-height:0;width:100%;}
+
+
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+
+#banner { }
+
+/* Fixed Topbar Navigation */
+body.top-navbar { padding-top: 0; }
+body.admin-bar .navbar-fixed-top { top: 28px; }
+body.home.top-navbar {padding-top: 0;}
+
+/* Nav
+-------------------------------------------------- */
+.navbar .navbar-inner {
+  background: #333;
+  border-bottom: 1px solid #111;
+  padding: 20px 0;
+}
+
+.navbar-fixed-top {
+  position: static;
+}
+
+.navbar .nav > li.active > a, .navbar .nav > li.active > a:hover {
+  color: #366180;
+  background: transparent;
+}
+
+.navbar .nav > li > a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+}
+
+.navbar .nav > li > a:hover {
+  color: #366180;
+}
+
+.navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
+  color: #366180;
+  background-color: transparent;
+}
+
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle, .navbar-inverse .nav li.dropdown.active > .dropdown-toggle, .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+  color: #366180;
+  background-color: transparent;
+  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+  -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+}
+
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
+  background-color: #366180;
+  background-image: -moz-linear-gradient(top, #366180, #0077B3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#366180), to(#0077B3));
+  background-image: -webkit-linear-gradient(top, #366180, #0077B3);
+  background-image: -o-linear-gradient(top, #366180, #0077B3);
+  background-image: linear-gradient(to bottom, #366180, #0077B3);
+  background-repeat: repeat-x;
+}
+
+
+/* Brand
+-------------------------------------------------- */
+
+body > .navbar .brand {
+    /*font-family: 'Pacifico', cursive;*/
+    font-family: 'Open Sans', sans-serif;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 0;
+    color: #000;
+    text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+          transition: all .2s linear;
+}
+body > .navbar .brand:hover {
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.4);
+}
+
+
+/* =============================================================================
+   Homepage 
+   ========================================================================== */
+
+
+.headingcta {
+  background: #366180 ;
+  padding: 70px 0 0 0;
+}
+
+.headingcta h1 {
+  font-size: 80px;
+  line-height: 80px;
+  text-shadow: 2px 3px 1px #444444;
+  color: #eeeeee;
+
+}
+
+.headingcta p.cta-text {
+  color: #eeeeee;
+  text-shadow: 1px 1px 1px #37647e;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.25;
+}
+
+/* Homepage Social Buttons
+-------------------------------------------------- */
+
+.homepage-social {
+  padding: 15px 0;
+  text-align: center;
+  background-color: #F5F5F5;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #DDD;
+}
+
+.homepage-social-buttons {
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  font-size: 24px;
+}
+
+.homepage-social-buttons li {
+  display: inline-block;
+  padding: 10px 0 0 0;
+}
+
+.homepage-social a {
+  text-decoration: none;
+  color: #444444;
+}
+
+.homepage-social a:hover {
+  text-decoration: none;
+  color: #3c6e91; 
+}
+
+/* Homepage Content
+-------------------------------------------------- */
+
+.homepage-content {
+  color: #333333;
+  padding: 40px 0 0 0;
+}
+
+.homepage-content h1 {
+  margin: 60px 0 10px;
+  font-size: 60px;
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.homepage-content .byline {
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #999;
+}
+
+.homepage-content img {
+  display: block;
+  margin: 0 auto 30px auto;
+}
+
+.homepage-content h2 {
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+
+.homepage-content p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.home-projects img {
+max-width: 100%;
+margin: 0 auto;
+}
+
+.home-thumbs {
+  text-align: center;
+}
+
+
+.input-large {
+  padding: 9px 14px;
+}
+
+/* Faded out hr */
+hr.soften {
+    height: 1px;
+    margin: 70px 0;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+    border: 0;
+}
+
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+#content { }
+
+/* Landing Page
+-------------------------------------------------- */
+
+.box {
+    background:#fff;
+    box-shadow:none;
+    border:1px solid #ddd;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    padding:30px 80px 60px 80px;
+    margin-top:15px;
+    margin-bottom:60px;
+    text-align: left;
+}
+
+.drop-shadow {
+   position:relative;
+}
+
+.drop-shadow:before,
+.drop-shadow:after {
+   content:"";
+   position:absolute;
+   z-index:-1;
+    bottom:15px;
+   left:10px;
+   width:50%;
+   height:20%;
+   -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+   -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+   box-shadow:0 15px 15px rgba(0, 0, 0, 0.7);
+   -webkit-transform:rotate(-2deg);
+   -moz-transform:rotate(-2deg);
+   -o-transform:rotate(-2deg);
+   transform:rotate(-2deg);
+}
+
+.drop-shadow:after{
+   right:10px;
+   left:auto;
+   -webkit-transform:rotate(2deg);
+   -moz-transform:rotate(2deg);
+   -o-transform:rotate(2deg);
+   transform:rotate(2deg);
+}
+
+.page-template-page-landing-php #banner, .page-template-page-landing-php #content-info  {
+  display: none;
+}
+
+
+/* Portfolio
+-------------------------------------------------- */
+
+#portfolio-filter {
+  margin: 0 0 15px 0;
+}
+
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+#main { }
+
+
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+#sidebar {
+  margin-top: 20px;
+}
+
+.widget-inner{
+  margin: 0 0 40px 0;
+}
+
+.widget-inner h4 {
+  border-bottom: 1px solid #DDD;
+  padding-bottom: 5px;
+}
+
+
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.meta {
+  list-style: none;
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+.meta-blog::before, .meta-blog::after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.meta-blog::after {
+  clear: both;
+}
+
+.meta > li {
+  float: left;
+}
+
+.meta-divider {
+  height: 20px;
+  margin: 0 9px;
+  border-right: 1px solid #EEEEEE;
+  border-left: 1px solid #DDDDDD;
+}
+
+.entry-title {
+  font-weight: 400;
+}
+
+.single-post .entry-title{
+  margin-top: 25px;
+}
+
+.hentry header { }
+.hentry time { }
+.hentry p.byline { }
+.hentry .entry-content { }
+.hentry footer { }
+
+.pager a {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #FFFFFF;
+  border: 1px solid #DDD;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.pager a:hover {
+  text-decoration: none;
+  background-color: whiteSmoke;
+}
+
+
+/*  Comments
+ -------------------------------------------------- */
+
+ .commentlist {
+  margin: 27px 0 45px;
+  padding: 0 0 30px;
+  overflow: hidden;
+}
+
+li.comment {
+  list-style: none;
+}
+
+.comment:first-child {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.comment > article {
+  margin: 0;
+  overflow: hidden;
+}
+
+.comment .avatar {
+  background: #fff;
+  margin: 0 0 5px 0;
+  position: relative;
+  width: 70px;
+  z-index: 1;
+}
+
+.comment .comment-meta { margin-bottom: 0; }
+
+.comment .author, .comment .author a {
+  color: #54555a;
+  margin: 0;
+}
+
+.comment .author .comment-reply-link { font-size: 11px; }
+
+.comment .date, .comment .date a {
+  color: #adb3b8;
+  font-style: italic;
+  margin: 1px 0 5px;
+}
+
+.comment .author a:hover, .comment .date a:hover { color: #f15a23; }
+
+.comment .children {
+  margin: 0;
+  padding: 30px 0 30px 70px;
+  position: relative;
+}
+
+.comment .children .comment {
+  position: relative;
+}
+
+.comment .children .comment:first-child { margin-top: 0; }
+
+
+.comments-form .input-block {
+  float: left;
+  margin: 0 30px 20px 0;
+}
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+#content-info {
+  padding: 30px 20px;
+  margin-top: 70px;
+  color: #b1b1b1;
+  background-color: #222;
+  border-top: 1px solid #555;
+}
+
+#content-info p {
+  margin-bottom: 10px;
+  color: #b1b1b1;
+}
+
+#content-info h3 {
+  font-size: 22px;
+  line-height: 31.5px;
+}
+
+#content-info li {
+  border-bottom: 1px solid #1b1b1b;
+  padding: 5px 0;
+  margin-right: 30px;
+}
+
+#content-info a{
+  color: #b1b1b1;
+  text-decoration: none;
+}
+
+#content-info a:hover{
+  color: #3c6e91;
+  text-decoration: none;
+}
+
+
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: 979px) {
+  /* Fix top padding when using the responsive grid with the fixed topbar */
+  body.top-navbar, body.home.top-navbar {
+    padding-top: 0;
+  }
+
+  .home .navbar-fixed-top {
+    margin-bottom: 0;
+  }
+
+  .navbar .navbar-inner {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar .navbar-inner {
+    margin-bottom: 0;
+  }
+
+  .headingcta, .homepage-social, #content-info {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+
+   .headingcta .span6{
+    padding: 0 10px;
+  }
+}
+
+/* Tablet to desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 980px) {
+  
+  .headingcta {
+    margin-top: -20px; /* Offset bottom margin on .navbar */
+  }
+
+  .headingcta h1 {
+    font-size: 60px;
+  }
+
+  .headingcta p.cta-text {
+    font-size: 20px;
+  }
+}
+
+/* Tablet
+------------------------- */
+@media (max-width: 768px) {
+
+.headingcta h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+.headingcta p {
+  text-align: center;
+}
+
+.headingcta p,
+.headingcta .btn {
+    font-size: 24px;
+  }
+
+.homepage-content .span4 {
+    margin-bottom: 40px;
+  }
+
+.homepage-social {
+    margin: 0 -20px;
+  }
+}
+
+/* Tablet Portrait
+------------------------- */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+   .headingcta, .homepage-social, #content-info {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+
+  .navbar{
+    margin-right: -20px;
+  }
+
+}
+
+/* Landscape phones
+------------------------- */
+@media (max-width: 480px) {
+
+  /* Change up some type stuff */
+h2 small {
+    display: block;
+  }
+
+.headingcta h1 {
+    font-size: 60px;
+  }
+.headingcta p,
+.headingcta .btn {
+    font-size: 20px;
+  }
+.headingcta .btn {
+    display: block;
+    margin: 0 auto;
+  }
+  
+.homepage-content h1 {
+    font-size: 40px;
+  }
+
+}
